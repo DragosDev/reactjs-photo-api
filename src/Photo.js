@@ -8,7 +8,11 @@ const Photo = ({
     name,
     portfolio_url,
     total_photos,
+    instagram_username,
+    twitter_username,
     profile_image: { medium },
+  
+   
   },
 }) => {
   return (
@@ -17,7 +21,9 @@ const Photo = ({
       <div className='photo-info'>
         <div>
           <h4>{name}</h4>
-          <p>{likes} ❤️</p>
+          <p>❤️ {likes}</p>
+          <p>Instagram {instagram_username}</p>
+          <p>Twitter {twitter_username}</p>
           <p>I have {total_photos} photos in my portfolio</p>
         </div>
         <a href={portfolio_url}>
